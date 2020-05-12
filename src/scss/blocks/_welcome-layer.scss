@@ -1,0 +1,41 @@
+.welcome-layer {
+    text-align: center;
+    width: 650px;
+    position: relative;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.9s ease-in-out;
+    z-index: 9;
+
+    &.active {
+        top: 50%;
+        opacity: 1;
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: 800px;
+    }
+
+    h1 {
+        color: $color-1;
+        font-size: $lg-font-size;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 1600px) {
+            font-size: $xl-font-size;
+        }
+    }
+
+    p {
+        color: $color-2;
+        font-size: $md-font-size;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 1600px) {
+            font-size: 27px;
+        }
+    }
+}

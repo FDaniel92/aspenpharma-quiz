@@ -1,0 +1,44 @@
+.gif-image {
+    position: absolute;
+    right: -57%;
+    top: 55%;
+    transition: 0.75s ease-in-out;
+
+    &.active {
+        right: -2%;
+        @media screen and (min-width: 770px) {
+            right: -4%;
+        }
+        @media screen and (min-width: 1440px) {
+            right: 0;
+        }
+        @media screen and (min-width: 1600px) {
+            right: 4%;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        top: 0;
+    }
+
+    img {
+        width: 350px;
+        height: 250px;
+       
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+            height: 400px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 600px;
+            height: 550px;
+        }
+
+        @media screen and (min-width: 1600px) {
+            width: 700px;
+            height: 650px;
+        }
+    }
+}

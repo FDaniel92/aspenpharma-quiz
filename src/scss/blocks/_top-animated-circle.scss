@@ -1,0 +1,29 @@
+.top-animated-circle {
+    position: absolute;
+    top: -200px;
+    right: -180px;
+    z-index: 100;
+    animation: movingCircle 9s infinite;
+    
+    img {
+        width: 400px;
+        height: 300px;
+
+        @media screen and (min-width: 1920px) {
+            width: 450px;
+            height: 350px;
+        }
+    }
+
+    @keyframes movingCircle {
+        from {
+            right: -180px;
+        }
+        50% {
+            right: -50px;
+        }
+        to {
+            right: -180px;
+        }
+    }
+}

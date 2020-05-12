@@ -1,0 +1,14 @@
+.aspen-logo {
+    margin: 50px 0 0 40px;
+    position: absolute;
+    z-index: 100;
+    img {
+        width: 144px;
+        height: 47px;
+
+        @media screen and (min-width: 1600px) {
+            width: 216px;
+            height: 70px;
+        }
+    }
+}

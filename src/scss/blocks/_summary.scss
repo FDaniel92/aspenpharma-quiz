@@ -1,0 +1,173 @@
+.summary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 20px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+
+    &__scrolling-box {
+        width: 80%;
+        height: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        overflow-y: scroll;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        @media screen and (min-width: 769px) {
+            width: 90%;
+            height: 360px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            height: 400px;
+        }
+
+        @media screen and (min-width: 1600px) {
+            height: 600px;
+        }
+        
+        h2 {
+            color: $color-1;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            @media screen and (min-width: 1280px) {
+                font-size: 50px;
+            }
+            @media screen and (min-width: 1600px) {
+                font-size: 70px;
+            }
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 22px;
+            color: $color-2;
+            @media screen and (min-width: 769px) {
+                font-size: 17px;
+            }
+            @media screen and (min-width: 1280px) {
+                font-size: 25px;
+            }
+            @media screen and (min-width: 1600px) {
+                font-size: 30px;
+            }
+        }
+        ul {
+            padding-left: 25px;
+            margin-bottom: 30px;
+            li {
+                font-size: 22px;
+                @media screen and (min-width: 769px) {
+                    font-size: 17px;
+                }
+                @media screen and (min-width: 1280px) {
+                    font-size: 25px;
+                }
+                @media screen and (min-width: 1600px) {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    &__up-arrow {
+        position: absolute;
+        top: 110px;
+        left: 45%;
+        transform: translateX(-45%) rotate(180deg);
+        animation: pulseUp 2s infinite;
+    
+        @media screen and (min-width: 1280px) {
+            top: 90px;
+        }
+
+        @media screen and (min-width: 1600px) {
+            top: 110px;
+        }
+    
+        img {
+            width: 27px;
+            height: 15px;
+    
+            @media screen and (min-width: 1600px) {
+                width: 55px;
+                height: 30px;
+            }
+        }
+    
+        @keyframes pulseUp {
+            0% {
+                transform: scale(1) rotate(180deg);
+            }
+            70% {
+                transform: scale(1.4) rotate(180deg);
+            }
+            100% {
+                transform: scale(1) rotate(180deg);
+            }
+        }
+    }
+
+    &__down-arrow {
+        position: absolute;
+        left: 45%;
+        transform: translateX(-45%);
+        bottom: 120px;
+        animation: pulse 2s infinite;
+
+        @media screen and (min-width: 800px) {
+            bottom: 140px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            bottom: 70px;
+        }
+
+        @media screen and (min-width: 1600px) {
+            bottom: 85px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            70% {
+                transform: scale(1.4);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        img {
+            width: 25px;
+            height: 15px;
+            @media screen and (min-width: 1600px) {
+                width: 40px;
+                height: 25px;
+            }
+        }
+    }
+
+    &__button {
+        margin: 40px 0 20px 0;
+        background: $color-3;
+        color: white;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+        font-size: 15px;
+        @media screen and (min-width: 1600px) {
+            font-size: 30px;
+            border-radius: 30px;
+        }
+    }
+
+}

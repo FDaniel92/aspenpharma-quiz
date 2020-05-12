@@ -1,0 +1,17 @@
+.case-history {
+    position: relative;
+    top: 155px;
+    left: 30px;
+    opacity: 0;
+    height: 75%;
+    transition: 1s ease-in-out;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1600px) {
+        top: 20%;
+        left: 120px;
+    }
+}

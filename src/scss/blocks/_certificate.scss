@@ -1,0 +1,61 @@
+.certificate {
+    background: $color-3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    padding: 0 20px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+        @media screen and (min-width: 1280px) {
+            font-size: 50px;
+        }
+        @media screen and (min-width: 1600px) {
+            font-size: 70px;
+        }
+    }
+
+    p {
+        font-size: 34px;
+        margin-bottom: 40px;
+        @media screen and (min-width: 1280px) {
+            font-size: 45px;
+        }
+        @media screen and (min-width: 1600px) {
+            font-size: 60px;
+        }
+    }
+
+    &__button {
+        margin: 40px auto;
+        background: #CCE5F4;
+        color: $color-1;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 285px;
+        text-align: center;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 15px 0;
+        border-radius: 25px;
+        @media screen and (min-width: 1600px) {
+            font-size: 30px;
+            border-radius: 30px;
+            max-width: 435px;
+        }
+    }
+
+}

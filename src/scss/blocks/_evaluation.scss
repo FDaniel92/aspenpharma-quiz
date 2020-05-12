@@ -1,0 +1,134 @@
+.evaluation,
+.evaluation-first,
+.evaluation-third {
+    position: absolute;
+    top: 45%;
+    right: -100%;
+    z-index: 100;
+    padding: 60px 30px 80px 30px;
+    background: linear-gradient(to bottom right, #007DC6, #002F82 );
+    color: white;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    transition: 0.8s ease-in-out;
+
+    &.active {
+        right: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 60px 20px 60px 40px;
+    }
+
+    @media screen and (min-width: 990px) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__scrolling-box {
+        width: 347px;
+        height: 385px;
+        overflow-y: scroll;
+        padding-right: 20px;
+
+        @media screen and (min-width: 1280px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 650px;
+        }
+
+        @media screen and (min-width: 1600px) {
+            width: 850px;
+            height: 530px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+
+            @media screen and (min-width: 1600px) {
+                font-size: 60px;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 25px;
+
+            @media screen and (min-width: 1600px) {
+                font-size: 20px;
+            }
+
+            &.references {
+                font-size: 10px;
+                margin-top: 15px;
+
+                @media screen and (min-width: 1600px) {
+                    font-size: 15px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        ul {
+            padding-left: 17px;
+
+            @media screen and (min-width: 1600px) {
+                padding-left: 22px;
+            }
+            li {
+                font-size: 15px;
+                color: white;
+
+                @media screen and (min-width: 1600px) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    &__button {
+        background: #CCE5F4;
+        color: $color-1;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 225px;
+        text-align: center;
+        font-size: 15px;
+
+        @media screen and (min-width: 1600px) {
+            font-size: 20px;
+        }
+    }
+
+    &__down-arrow {
+        position: absolute;
+        bottom: 20px;
+        left: 45%;
+        transform: translateX(-45%);
+        animation: pulse 2s infinite;
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            70% {
+                transform: scale(1.3);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        img {
+            width: 27px;
+            height: 15px;
+        }
+    }
+}
